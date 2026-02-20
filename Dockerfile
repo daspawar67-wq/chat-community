@@ -4,7 +4,7 @@ FROM tomcat:9.0-jdk17
 LABEL maintainer="yourname@example.com"
 
 # Remove default ROOT app
-RUN rm -rf /usr/local/tomcat/webapps/*
+RUN rm -rf /usr/local/tomcat/webapps/ROOT.WAR
 
 # Add Postgres JDBC driver
 ADD https://jdbc.postgresql.org/download/postgresql-42.7.4.jar /usr/local/tomcat/lib/
